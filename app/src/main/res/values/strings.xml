@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">CS323-TerriyonTylerProject</string>
+    <string name="app_name">CS323-TerriyonTylerProject:Movies</string>\
+    <string name="Movies">Movies</string>
+
+    <string-array name="options">
+        <item>Movies</item>
+        <item>Theaters</item>
+    </string-array>
+
+    <string-array name="movies">
+
+    </string-array>
+
 </resources>
