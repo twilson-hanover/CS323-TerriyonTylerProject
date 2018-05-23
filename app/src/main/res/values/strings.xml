@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">CS323-TerriyonTylerProject:Movies</string>\
     <string name="Movies">Movies</string>
+    <string name="morning_show">Morning Show</string>
+    <string name="afternoon_show">Afternoon Show</string>
+    <string name="late_night_show">Late Night Show</string>
+    <string name="purchase_ticket">Purchase Ticket</string>
+    <string name="theatre">Theatre</string>
 
     <string-array name="options">
         <item>Movies</item>

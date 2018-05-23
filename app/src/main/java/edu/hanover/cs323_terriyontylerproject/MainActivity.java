@@ -16,6 +16,10 @@ public class MainActivity extends Activity {
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> listView, View v, int position, long id) {
                 if (position == 0) {
+                    Intent intent = new Intent(MainActivity.this, Movie.class);
+                    startActivity(intent);
+                }
+                if (position == 1) {
                     Intent intent = new Intent(MainActivity.this, Theatre.class);
                     startActivity(intent);
                 }
