@@ -11,4 +11,10 @@
 
     </string-array>
 
+    <string-array name="Theatres">
+        <item>Infinity theatres</item>
+        <item>Xscape theatres</item>
+        <item>Riverrun theatres</item>
+    </string-array>
+
 </resources>
