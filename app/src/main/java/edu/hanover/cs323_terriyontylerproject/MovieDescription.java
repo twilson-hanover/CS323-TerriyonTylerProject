@@ -1,9 +1,9 @@
 package edu.hanover.cs323_terriyontylerproject;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 
-public class MovieDescription extends AppCompatActivity {
+public class MovieDescription extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
