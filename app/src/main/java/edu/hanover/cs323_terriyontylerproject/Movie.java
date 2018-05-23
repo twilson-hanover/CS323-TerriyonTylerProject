@@ -1,29 +1,37 @@
 package edu.hanover.cs323_terriyontylerproject;
 
-import android.app.ListActivity;
-import android.os.Bundle;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.view.View;
-import android.content.Intent;
+public class Movie {
+    private String name;
+    private String description;
+    private int imageResourceId;
 
-public class Movie extends ListActivity {
+    public static final Movie[] movies = {
+            new Movie("Deadpool 2", "Description", R.drawable.index),
+            new Movie("Godspeed", "Description", R.drawable.index),
+            new Movie("Solo", "Description", R.drawable.index),
+    };
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        ListView listTheatres = getListView();
-        //     ArrayAdapter<Movie> listAdapter = new ArrayAdapter<Movie>(
-        //               this, android.R.layout.simple_list_item_1,
-//                Theatre.theatres);
-//        listTheatres.setAdapter(listAdapter);
+    private Movie(String name, String description, int imageResourceId) {
+        this.name = name;
+        this.description = description;
+        this.imageResourceId = imageResourceId;
     }
 
-//    @Override
-//    public void onListItemClick(ListView listView, View itemView, int position, long id) {
-//        Intent intent = new Intent(Theatre.this, TheatrePrice.class);
-//        intent.putExtra(TheatrePrice.EXTRA_DRINKNO, (int)id);
-//        startActivity(intent);
-//    }
+    public String getName() {
+        return name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public int getImageResourceId() {
+        return imageResourceId;
+    }
+
+    @Override
+    public String toString() {
+        return this.name;
+    }
 }
+

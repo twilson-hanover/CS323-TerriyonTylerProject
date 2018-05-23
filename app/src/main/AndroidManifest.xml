@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".TheatrePrice" />
         <activity android:name=".TheatreActivity" />
-        <activity android:name=".Movie"></activity>
+        <activity android:name=".Movie" />
+        <activity android:name=".MovieDescription"></activity>
     </application>
 
 </manifest>
