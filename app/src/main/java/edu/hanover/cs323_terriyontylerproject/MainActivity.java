@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
                     startActivity(intent);
                 }
                 if (position == 1) {
-                    Intent intent = new Intent(MainActivity.this, Theatre.class);
+                    Intent intent = new Intent(MainActivity.this, TheatreActivity.class);
                     startActivity(intent);
                 }
             }

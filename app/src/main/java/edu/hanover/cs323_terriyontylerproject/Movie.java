@@ -14,7 +14,7 @@ public class Movie extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ListView listTheatres = getListView();
-        //     ArrayAdapter<Theatre> listAdapter = new ArrayAdapter<Theatre>(
+        //     ArrayAdapter<Movie> listAdapter = new ArrayAdapter<Movie>(
         //               this, android.R.layout.simple_list_item_1,
 //                Theatre.theatres);
 //        listTheatres.setAdapter(listAdapter);

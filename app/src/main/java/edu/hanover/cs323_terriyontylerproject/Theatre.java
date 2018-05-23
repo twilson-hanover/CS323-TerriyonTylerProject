@@ -1,29 +1,42 @@
 package edu.hanover.cs323_terriyontylerproject;
 
-import android.app.ListActivity;
-import android.os.Bundle;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.view.View;
-import android.content.Intent;
+public class Theatre {
+    private String name;
+    private String price;
+    private String location;
+    private int imageResourceId;
 
-public class Theatre extends ListActivity {
+    public static final Theatre[] theatres = {
+            new Theatre("Infinity Theatres", "9.00$", "Madison", R.drawable.index),
+            new Theatre("Xscape theatres", "6.00$", "Madison", R.drawable.index),
+            new Theatre("Riverrun Theatres", "7.50$", "Madison", R.drawable.index),
+    };
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        ListView listTheatres = getListView();
-   //     ArrayAdapter<Theatre> listAdapter = new ArrayAdapter<Theatre>(
- //               this, android.R.layout.simple_list_item_1,
-//                Theatre.theatres);
-//        listTheatres.setAdapter(listAdapter);
+    private Theatre(String name, String price, String location, int imageResourceId) {
+        this.name = name;
+        this.price = price;
+        this.location = location;
+        this.imageResourceId = imageResourceId;
     }
 
-//    @Override
-//    public void onListItemClick(ListView listView, View itemView, int position, long id) {
-//        Intent intent = new Intent(Theatre.this, TheatrePrice.class);
-//        intent.putExtra(TheatrePrice.EXTRA_DRINKNO, (int)id);
-//        startActivity(intent);
-//    }
+    public String getName() {
+        return name;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public int getImageResourceId() {
+        return imageResourceId;
+    }
+
+    @Override
+    public String toString() {
+        return this.name;
+    }
 }
