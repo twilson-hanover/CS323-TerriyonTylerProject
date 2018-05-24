@@ -6,6 +6,7 @@
     <string name="late_night_show">Late Night Show</string>
     <string name="purchase_ticket">Purchase Ticket</string>
     <string name="theatre">Theatre</string>
+    <string name="settings">Settings</string>
     <string name="to_hint">Seen it? Leave a review!</string>
 
     <string-array name="options">

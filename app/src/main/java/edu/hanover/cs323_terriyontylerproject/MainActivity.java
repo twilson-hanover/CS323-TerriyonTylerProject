@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.view.View;
+import android.view.Menu;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,6 +32,12 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(itemClickListener);
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 //    private void setActionBarTitle(int position) {
 //        String title;
