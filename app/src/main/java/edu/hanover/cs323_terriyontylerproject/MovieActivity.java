@@ -23,6 +23,7 @@ public class MovieActivity extends ListActivity {
     @Override
     public void onListItemClick(ListView listView, View itemView, int position, long id) {
         Intent intent = new Intent(MovieActivity.this, MovieDescription.class);
+        intent.putExtra(MovieDescription.EXTRA_MOVIENO, (int) id);
         startActivity(intent);
     }
 }
