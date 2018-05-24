@@ -1,6 +1,7 @@
 package edu.hanover.cs323_terriyontylerproject;
 
 public class Theatre {
+    //initialize Theatre parameters
     private String name;
     private String price;
     private String location;
@@ -18,7 +19,7 @@ public class Theatre {
         this.location = location;
         this.imageResourceId = imageResourceId;
     }
-
+    //getter functions
     public String getName() {
         return name;
     }

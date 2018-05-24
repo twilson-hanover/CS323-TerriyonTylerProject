@@ -13,10 +13,12 @@ public class TheatrePrice extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_theatre_price);
     }
+    //toastMsg function creates the toast
     public void toastMsg(String msg){
         Toast toast = Toast.makeText(this, msg, Toast.LENGTH_LONG);
         toast.show();
     }
+    //this will display toast message
     public void displayToastMsg(View v){
         toastMsg("Your ticket has been purchased, Thank You!");
     }

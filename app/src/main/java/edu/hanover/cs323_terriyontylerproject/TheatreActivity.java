@@ -22,6 +22,7 @@ public class TheatreActivity extends ListActivity {
     }
 
     @Override
+    //create onListItemClick
     public void onListItemClick(ListView listView, View itemView, int position, long id) {
         Intent intent = new Intent(TheatreActivity.this, TheatrePrice.class);
         startActivity(intent);

@@ -16,12 +16,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //Create an OnItemClickListener
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> listView, View v, int position, long id) {
+                // if user clicks position 1 (movie) send to movie activity page
                 if (position == 0) {
                     Intent intent = new Intent(MainActivity.this, MovieActivity.class);
                     startActivity(intent);
                 }
+                // if user clicks position 1 (theatre) send to theatre page
                 if (position == 1) {
                     Intent intent = new Intent(MainActivity.this, TheatreActivity.class);
                     startActivity(intent);
@@ -35,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    //creates the options menu for the toolbar
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return super.onCreateOptionsMenu(menu);
