@@ -8,14 +8,14 @@
     tools:context=".Theatre">
 
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:src="@drawable/screenshot"
-        android:contentDescription="@string/theatre"/>
+        android:layout_width="match_parent"
+        android:layout_height="319dp"
+        android:contentDescription="@string/theatre"
+        android:src="@drawable/screenshot" />
 
     <ListView
         android:id="@+id/list_options"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:entries="@array/Theatres" />
 
