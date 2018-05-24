@@ -6,9 +6,9 @@ public class Movie {
     private int imageResourceId;
 
     public static final Movie[] movies = {
-            new Movie("Deadpool 2", "Description", R.drawable.index),
-            new Movie("Godspeed", "Description", R.drawable.index),
-            new Movie("Solo", "Description", R.drawable.index),
+            new Movie("Deadpool 2", "Description", R.drawable.deadpool),
+            new Movie("Godspeed", "Description", R.drawable.godspeed),
+            new Movie("Solo: A Star Wars Story", "Description", R.drawable.solo),
     };
 
     private Movie(String name, String description, int imageResourceId) {
